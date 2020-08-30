@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-6 col-md-offset-3">
+            <h3>Request an Appointment</h3>
+            <form #postForm="ngForm" (ngSubmit)="onBookAppointment(postForm)">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" required ngModel name="name" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" required ngModel name="email" />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" class="form-control" id="phone" required ngModel name="phone" />
+                </div>
+                <div class="form-group">
+                    <label for="appointmentDate">Appointment Date:</label>
+                    <input type="date" class="form-control" required ngModel name="appointmentDate" id="appointmentDate">
+                </div>
+                <div class="form-group">
+                    <label for="appointmentTime">Appointment Time:</label>
+                    <input type="time" class="form-control" required ngModel name="appointmentTime" id="appointmentTime">
+                </div>
+                <button class="btn btn-primary" type="submit" [disabled]="postForm.invalid">
+                    Book
+                </button>
+            </form>
+        </div>
+        <!-- <div class="col-md-12">
+
+            <div class="time-slot">
+                <ul class="clearfix">
+                    <li>
+                        <a class="timing">
+                            <span>9:00</span> <span>AM</span>
+                        </a>
+                        <a class="timing">
+                            <span>10:00</span> <span>AM</span>
+                        </a>
+                        <a class="timing">
+                            <span>11:00</span> <span>AM</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div> -->
+    </div>
+</div>

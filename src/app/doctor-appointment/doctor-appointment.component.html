@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="panel widget light-widget panel-bd-top">
+                        <div class="panel-heading no-title"> </div>
+                        <div class="panel-body">
+                            <div class="text-center vd_info-parent"> <img alt="example image"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTGGB7iQ3XJ7fqFwzk0qxCi5bOAjFr26H79kQ&usqp=CAU">
+
+                            </div>
+                            <div class="row">
+                                <h2 style="text-align: center;" class="font-semibold mgbt-xs-5">Dr. {{ doctorDetails.name }}</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="c-profile--qualification">
+                        <p class="c-profile__details" data-qa-id="doctor-qualifications">{{ doctorDetails.qualification }}</p>
+                        <div class="c-profile__details" data-qa-id="doctor-specializations">
+                            <div class="u-d-inline-flex flex-ai-center">
+                                <div><span>
+                                        <h2 class="u-d-inlineblock u-spacer--right-v-thin c-profile__details">
+                                            {{ doctorDetails.specialization }}</h2>
+                                    </span></div>
+                            </div>
+                            <h2>{{ doctorDetails.experience }}
+                                <!-- -->&nbsp;<span>Years Experience Overall</span><span>&nbsp; (
+                                    <!-- -->{{ doctorDetails.experience }}
+                                    <!-- --> years as specialist)</span></h2>
+                        </div>
+                    </div>
+
+                    <div class="appointment-section">
+                        <div>
+                            <div class="u-spacer--thin pure-1-1">
+                                <button class="btn btn-primary" data-qa-id="book_button" (click)="onSelectAppointment(doctorDetails)">
+                                    <span>Book Appointment</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

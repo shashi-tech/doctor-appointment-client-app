@@ -1,0 +1,17 @@
+.c-profile--qualification, .c-profile--verification, .c-profile__description {
+    margin-bottom: 8px;
+    color: #414146;
+}
+
+.c-profile__details {
+    margin-bottom: 3px;
+    margin-top: 27px;
+    color: #414146;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 0.3;
+}
+
+h2 {
+    font-size: 21px;
+}
