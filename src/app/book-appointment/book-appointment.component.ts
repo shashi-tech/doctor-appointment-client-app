@@ -14,6 +14,7 @@ import { User } from '../model/user.model';
 export class BookAppointmentComponent implements OnInit {
   doctorId;
   appointmentId;
+  errorMsg;
   doctorDetails: DoctorDetails;
   user: User;
   appointment = {
@@ -69,6 +70,9 @@ export class BookAppointmentComponent implements OnInit {
       data => {
         console.log(data);
         this.router.navigate(['appointment/success', data.id])
+      },
+      error => {
+        this.errorMsg = 'Please select available appointment slot!';
       }
     );
 
